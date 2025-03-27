@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 
 const TopBar = lazy(() => import('./components/TopBar/TopBar'))
+const NavBar = lazy(() => import('./components/NavBar/NavBar'))
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'))
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <div>
       <Suspense fallback={null}>
         <TopBar />
+        <NavBar />
       </Suspense>
 
       <Suspense fallback={null}>
