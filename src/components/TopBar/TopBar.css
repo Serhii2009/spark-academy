@@ -1,0 +1,102 @@
+.top-bar {
+  background-color: #be1818;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px 5px 110px;
+  font-size: 14px;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-bar-social {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.top-bar-social p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+.top-bar-contacts {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.gmail-part,
+.phone-part {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gmail-part img {
+  width: 40px;
+  height: 40px;
+}
+
+.phone-part img {
+  width: 30px;
+  height: 30px;
+}
+
+.gmail-part a,
+.phone-part a {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.gmail-part a:hover,
+.phone-part a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  width: 1px;
+  height: 36px;
+  background-color: white;
+}
+
+/* --- Адаптація для планшетів --- */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+}
