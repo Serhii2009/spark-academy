@@ -1,7 +1,7 @@
-import './NavBar.css'
-
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { assets } from '../../assets/assets'
+import './NavBar.css'
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,13 +13,28 @@ const NavBar = () => {
 
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li>
-            <a href="#">Головна сторінка</a>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Головна сторінка
+            </NavLink>
           </li>
           <li>
-            <a href="#">Курси</a>
+            <NavLink
+              to="/courses"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Курси
+            </NavLink>
           </li>
           <li>
-            <a href="#">Пройти тест</a>
+            <NavLink
+              to="/test"
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Пройти тест
+            </NavLink>
           </li>
         </ul>
 
@@ -36,18 +51,35 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Модальне меню для мобільної версії */}
       {menuOpen && (
         <div className="mobile-menu">
           <ul>
             <li>
-              <a href="#">Головна сторінка</a>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={() => setMenuOpen(false)}
+              >
+                Головна сторінка
+              </NavLink>
             </li>
             <li>
-              <a href="#">Курси</a>
+              <NavLink
+                to="/courses"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={() => setMenuOpen(false)}
+              >
+                Курси
+              </NavLink>
             </li>
             <li>
-              <a href="#">Пройти тест</a>
+              <NavLink
+                to="/test"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={() => setMenuOpen(false)}
+              >
+                Пройти тест
+              </NavLink>
             </li>
           </ul>
         </div>

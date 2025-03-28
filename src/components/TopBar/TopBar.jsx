@@ -7,10 +7,20 @@ const TopBar = () => {
       <div className="top-bar-social">
         <p>Соцмережі:</p>
         <div className="social-icons">
-          <a href="#" className="social-icon instagram">
+          <a
+            href="https://www.instagram.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon instagram"
+          >
             <img src={assets.instagram_icon} alt="Instagram" />
           </a>
-          <a href="#" className="social-icon facebook">
+          <a
+            href="https://www.facebook.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon facebook"
+          >
             <img src={assets.facebook_icon} alt="Facebook" />
           </a>
         </div>

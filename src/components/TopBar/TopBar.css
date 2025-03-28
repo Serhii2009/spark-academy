@@ -19,6 +19,7 @@
     align-items: center;
     padding: 5px 100px 5px 110px;
     font-size: 14px;
+    letter-spacing: 0.84px;
 
     opacity: 0;
     transform: translateY(-10px);
