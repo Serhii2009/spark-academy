@@ -12,11 +12,13 @@ const TestPage = lazy(() => import('./pages/TestPage/TestPage'))
 
 const App = () => {
   return (
-    <div>
-      <Suspense fallback={null}>
-        <TopBar />
-        <NavBar />
-      </Suspense>
+    <div style={{ position: 'relative' }}>
+      <div style={{ position: 'relative', zIndex: 100 }}>
+        <Suspense fallback={null}>
+          <TopBar />
+          <NavBar />
+        </Suspense>
+      </div>
 
       <Suspense fallback={null}>
         <Routes>

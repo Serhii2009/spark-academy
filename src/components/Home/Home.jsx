@@ -18,7 +18,7 @@ const Home = () => {
             можливостей в життя!
           </p>
 
-          <button className="home-cta-button">Записатися на курс →</button>
+          <button className="home-cta-button">Записатися на курс</button>
         </div>
 
         <img
@@ -26,6 +26,12 @@ const Home = () => {
           alt="Lepestok"
           className="home-image-main"
         />
+      </div>
+
+      <div className="home-benefits">
+        <h1>
+          Чому саме <span>spark academy</span>?
+        </h1>
       </div>
     </div>
   )
