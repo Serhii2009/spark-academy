@@ -11,7 +11,6 @@ const Benefits = () => {
       </h2>
 
       <div className="cards-container">
-        {/* Картка 1 */}
         <div className="card">
           <div className="card-inner">
             <div className="card-front">
@@ -29,73 +28,81 @@ const Benefits = () => {
           </div>
         </div>
 
-        {/* Картка 2 */}
         <div className="card">
           <div className="card-inner">
             <div className="card-front">
               <img src={assets.secondbenefit} alt="Викладачі" />
-              <h3>Професійні викладачі</h3>
+              <h3>Висококваліфіковані викладачі</h3>
             </div>
             <div className="card-back">
               <p>
-                Наші викладачі - сертифіковані фахівці з міжнародними дипломами
+                Наші викладачі – сертифіковані фахівці, які точно знають, як
+                навчити Вас англійської. CELTA, DELTA, TESOL, TEFL – не просто
+                набір літер, а гарантія Вашого успіху.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Картка 3 */}
         <div className="card">
           <div className="card-inner">
             <div className="card-front">
-              <img src="/icons/progress.svg" alt="Прогрес" />
-              <h3>Відстеження прогресу</h3>
-            </div>
-            <div className="card-back">
-              <p>Регулярно оцінюємо ваші знання та адаптуємо програму</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Картка 4 */}
-        <div className="card">
-          <div className="card-inner">
-            <div className="card-front">
-              <img src="/icons/exams.svg" alt="Екзамени" />
-              <h3>Підготовка до іспитів</h3>
+              <img src={assets.thirdbenefit} alt="Прогрес" />
+              <h3>Система постійного відстеження прогресу</h3>
             </div>
             <div className="card-back">
               <p>
-                Структуровані курси для підготовки до IELTS, TOEFL та інших
-                іспитів
+                Регулярний моніторинг знань та прогресу дозволяє бачити реальні
+                результати, а персональні рекомендації та коригування
+                навчального плану, відповідно до Ваших досягнень, гарантують
+                ефективність навчання.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Картка 5 */}
         <div className="card">
           <div className="card-inner">
             <div className="card-front">
-              <img src="/icons/approach.svg" alt="Підхід" />
-              <h3>Індивідуальний підхід</h3>
+              <img src={assets.forthbenefit} alt="Екзамени" />
+              <h3>Спеціалізація на підготовці до екзаменів</h3>
             </div>
             <div className="card-back">
-              <p>Програма навчання, що відповідає вашим цілям та рівню</p>
+              <p>
+                Отримайте структуровану програму підготовки, практику реальних
+                тестів та експертний супровід на кожному етапі навчання, щоб Ви
+                з впевненістю склали іспити.
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Картка 6 */}
         <div className="card">
           <div className="card-inner">
             <div className="card-front">
-              <img src="/icons/prices.svg" alt="Ціни" />
+              <img src={assets.fifthbenefit} alt="Підхід" />
+              <h3>Адаптивний підхід</h3>
+            </div>
+            <div className="card-back">
+              <p>
+                Жодних шаблонів, тільки індивідуальний підхід, враховуючи Ваші
+                цілі та стиль навчання. Ми перетворюємо складне на зрозуміле.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card-inner">
+            <div className="card-front">
+              <img src={assets.sixthbenefit} alt="Ціни" />
               <h3>Доступні ціни</h3>
             </div>
             <div className="card-back">
               <p>
-                Якісне навчання за доступною вартістю з гнучкими умовами оплати
+                Навчання без стресу для бюджету — пропонуємо доступні ціни та
+                гнучкі варіанти оплати, щоб Ви могли зосередитись на своєму
+                прогресі, а не на витратах.
               </p>
             </div>
           </div>
