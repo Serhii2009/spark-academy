@@ -19,7 +19,12 @@ const Benefits = () => {
               <h3>Ефективна та комплексна методика</h3>
             </div>
             <div className="card-back">
-              <p>Ефективна та комплексна методика</p>
+              <p>
+                Фокусуємось на мовних трендах та сучасних, ефективних підходах
+                до вивчення мови. Актуальні автентичні матеріали та ресурси,
+                інтерактивні методики та розмовні клуби. Кожен урок це крок до
+                Вашої мовної впевненості.
+              </p>
             </div>
           </div>
         </div>
@@ -28,7 +33,7 @@ const Benefits = () => {
         <div className="card">
           <div className="card-inner">
             <div className="card-front">
-              <img src="/icons/teachers.svg" alt="Викладачі" />
+              <img src={assets.secondbenefit} alt="Викладачі" />
               <h3>Професійні викладачі</h3>
             </div>
             <div className="card-back">
