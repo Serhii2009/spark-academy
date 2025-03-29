@@ -16,13 +16,10 @@ const Benefits = () => {
           <div className="card-inner">
             <div className="card-front">
               <img src={assets.firstbenefit} alt="Методика" />
-              <h3>Ефективна методика</h3>
+              <h3>Ефективна та комплексна методика</h3>
             </div>
             <div className="card-back">
-              <p>
-                Використовуємо сучасні підходи до навчання для швидкого
-                засвоєння матеріалу
-              </p>
+              <p>Ефективна та комплексна методика</p>
             </div>
           </div>
         </div>
