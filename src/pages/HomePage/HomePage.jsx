@@ -1,9 +1,11 @@
-import Home from '../../components/Home/Home'
+import MainSection from '../../components/MainSection/MainSection'
+import Benefits from '../../components/Benefits/Benefits.jsx'
 
 const HomePage = () => {
   return (
     <div>
-      <Home />
+      <MainSection />
+      <Benefits />
     </div>
   )
 }

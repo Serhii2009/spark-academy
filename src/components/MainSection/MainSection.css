@@ -1,5 +1,3 @@
-/* -----Main Section----- */
-
 .home-main {
   position: relative;
   padding: 33px 40px 48px 24px;
@@ -75,24 +73,6 @@
 
 .home-image-main {
   display: none;
-}
-
-/* -----Benefits----- */
-.home-benefits {
-  margin-top: 70px;
-}
-
-.home-benefits h1 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #121e2b;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.home-benefits h1 span {
-  color: #bf1515;
 }
 
 /* --+++++++---Animation---+++++++-- */
